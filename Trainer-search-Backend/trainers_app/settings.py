@@ -77,24 +77,25 @@ WSGI_APPLICATION = 'trainers_app.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/5.2/ref/settings/#databases
 
-DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
-    }
-}
-
-# MySQL Configuration (commented out)
+# SQLite Configuration (commented out)
 # DATABASES = {
 #     'default': {
-#         'ENGINE': 'django.db.backends.mysql',
-#         'NAME': 'trainers_db',
-#         'USER':'root',
-#         "PASSWORD":'Sujanhg@1234',
-#         'HOST':'localhost',
-#         'PORT':'3306'
+#         'ENGINE': 'django.db.backends.sqlite3',
+#         'NAME': BASE_DIR / 'db.sqlite3',
 #     }
 # }
+
+# MySQL Configuration
+DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': 'trainers_db',
+        'USER': 'root',
+        'PASSWORD': 'Ritesh$123',
+        'HOST': 'localhost',
+        'PORT': '3306'
+     }
+ }
 
 
 # Password validation
