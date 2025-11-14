@@ -28,10 +28,10 @@ db.sqlite3-journal
 /staticfiles
 
 # Virtual Environment
-venv/
-ENV/
-env/
-.venv
+# venv/
+# ENV/
+# env/
+# .venv
 
 # Node
 node_modules/
